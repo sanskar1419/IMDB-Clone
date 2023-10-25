@@ -141,9 +141,8 @@ function loadMovieDetails() {
       console.log(movie.dataset.id);
       searchMenu.classList.add("card-dispay");
       searchInput.value = "";
-      const result = await fetch(
-        `http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=86dc0ebb`
-      );
+      const Movieurl = `http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=86dc0ebb`;
+      const result = await fetch(`${Movieurl}`);
       const movieDetails = await result.json();
       console.log(movieDetails);
 
