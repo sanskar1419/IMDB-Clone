@@ -34,7 +34,7 @@ function displayMovieDetails(details) {
     details.Poster != "N/A" ? details.Poster : "Images/pxfuel.jpg"
   }" alt="" />
   <button class="Go-back">
-    <a href="IMDBClone.html">Go-back</a>
+    <a href="index.html">Go-back</a>
   </button>
 </div>
 <div class="aboutMovieContentContainer">
