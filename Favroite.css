@@ -1,0 +1,133 @@
+/* Appling Style to favroite Container */
+.Favroite-container {
+  color: whitesmoke;
+  width: 100%;
+  height: auto;
+  /* border: 2px solid blue; */
+  padding: 0 40px;
+  /* margin-top: px; */
+}
+
+/* Appling Style to heading */
+.Favroite-container h2 {
+  margin-bottom: 20px;
+  color: hsl(57.04deg 97.38% 44.9%);
+  font-size: 2rem;
+}
+
+/* Appling Style to favroite Individual Container */
+.Favroite-section-individual-container {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  /* justify-content: center; */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.Favroite-section-individual-container::-webkit-scrollbar {
+  height: 2px;
+}
+
+/* Appling style to individual list */
+.Individual-favroite-list {
+  position: relative;
+  /* border: 2px solid red; */
+  min-width: 250px;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.Individual-favroite-list img {
+  width: 260px;
+  height: 100%;
+  border: 1px solid rgb(59, 55, 55);
+  box-shadow: inset 0px 0px 8px 4px rgb(59, 55, 55);
+  transition: 1s ease-in-out;
+  opacity: 0.8;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Individual-favroite-list img:hover {
+  transform: scale(1.05);
+}
+
+/* Appling Style to content in favroite */
+.Favroit-content {
+  position: absolute;
+  top: -500%;
+  /* left: 20%; */
+  /* bottom: 3%; */
+  color: whitesmoke;
+  width: 100%;
+}
+
+.Favroit-content h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Favroit-content h5 i {
+  color: hsl(57.04deg 97.38% 44.9%);
+  margin-right: 4px;
+}
+.Favroit-content h4 {
+  text-align: center;
+}
+
+.Favroit-content h4 span {
+  background: hsl(57.04deg 97.38% 44.9%);
+  color: black;
+  padding: 2px 7px;
+  margin-right: 5px;
+  /* margin-bottom: 100px; */
+}
+
+/* Appling style to arrow that will scroll the content */
+.fa-arrow-right-long {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6c747f;
+  padding: 3px;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: 0.5s linear;
+  opacity: 0;
+}
+
+.fa-arrow-left-long {
+  position: absolute;
+  left: unset;
+  right: 2%;
+  top: 40%;
+  font-size: 20px;
+  background: #6c747f;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50%;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.Favroite-container:hover .fa-arrow-right-long {
+  opacity: 1;
+}
+
+.Favroite-container:hover .fa-arrow-left-long {
+  opacity: 1;
+}

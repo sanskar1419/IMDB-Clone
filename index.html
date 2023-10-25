@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- For Setting viewport and appling Media Queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the web page -->
+    <title>Movie Website | Sanskar Gupta</title>
+    <!-- Linking Css file -->
+    <link rel="stylesheet" type="text/css" href="IMDBClone.css" />
+    <!-- Setting fevicon to the movie website -->
+    <link rel="icon" href="Images/Favicon_icon.png" type="image/x-icon" />
+    <!-- Linking font awesome to add icon-->
+    <script
+      src="https://kit.fontawesome.com/acf3eaf7bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Container for Whole page where we are going top see website -->
+    <div id="Website-movies-container">
+      <!-- Vidio that will be Played in backgroud without audio -->
+      <video
+        src="Vidios/Arrow Season 8 Official Trailer - Comic Con 2019.mkv"
+        muted
+        autoplay
+      ></video>
+      <!-- ......................................................................................................................................................... -->
+      <!-- Navigation menu container -->
+      <nav>
+        <div id="Container_logo_Home_Search_Bar">
+          <img src="Images/movie.png" />
+          <ul class="horizontal-list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <!-- Search Bar to take Input -->
+              <input
+                type="text"
+                placeholder="Search...."
+                id="Search-Bar"
+                onkeyup="findMovies()"
+                onclick="findMovies()"
+              />
+
+              <!-- Individual item template that has been shown in the Search result -->
+              <div id="Search-Menu">
+                <!-- <div class="list-item">
+                  <a href="" class="card">
+                    <img src="Images/thor.jpg" alt="" />
+                    <div class="content">
+                      <h3>Thor: Love and Thunder</h3>
+                      <p>Action</p>
+                      <p>
+                        2022 , <span>IMBD</span>
+                        <i class="fa-solid fa-star"></i> 9.6
+                      </p>
+                    </div>
+                  </a>
+                  <button type="submit" id="favourite-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Dropdown menu for small screen size -->
+        <div class="dropdown-menu text-right">
+          <div class="bars">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="dropdown-list nav-menu">
+            <ul class="no-list-style">
+              <li>
+                <a href="#" class="movie">Movies</a>
+              </li>
+              <li>
+                <a href="#" class="tv-series">Tv Series</a>
+              </li>
+              <li>
+                <a href="FavroitePage.html">Favourite List</a>
+              </li>
+              <li>
+                <img src="Images/man.png" alt="" id="User-img" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="Remaining_Item_nav_menu">
+          <ul class="horizontal-list nav-menu">
+            <li>
+              <a href="#" class="movie">Movies</a>
+            </li>
+            <li>
+              <a href="#" class="tv-series">Tv Series</a>
+            </li>
+            <li>
+              <a href="FavroitePage.html">Favourite List</a>
+            </li>
+            <li>
+              <img src="Images/man.png" alt="" id="User-img" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ............................................................................................................................................................  -->
+      <!-- Home Page Movie content that will be shown -->
+      <div class="movie-content">
+        <h1 id="Movie-heading">The Arrow</h1>
+        <p>
+          Spoiled billionaire playboy Oliver Queen is missing and presumed dead
+          when his yacht is lost at sea. He returns five years later a changed
+          man, determined to clean up the city as a hooded vigilante armed with
+          a bow.
+        </p>
+        <h6>Hotstar</h6>
+        <h5>Thriller</h5>
+        <h4>2007-2017</h4>
+        <h3><span>IMBD</span> <i class="fa-solid fa-star"></i> 9.6</h3>
+      </div>
+
+      <!-- ......................................................................................................................................................................... -->
+      <!-- Section to Show popular TV series and Movies -->
+      <section id="Popular-Section">
+        <h2 id="Section-Heading">Latsest Releases</h2>
+        <i class="fa-solid fa-arrow-right" id="btn-right"></i>
+        <i class="fa-solid fa-arrow-left" id="btn-right"></i>
+        <div class="popular-container" id="playlist-container">
+          <!-- <a href="#" class="individual-card">
+            <img src="Images/Arrow2.jpg" alt="" class="poster" />
+            <div class="Popular-movie-content">
+              <h5>The Arrow</h5>
+              <h5>Thriller,2017</h5>
+              <h4><span>IMBD</span> <i class="fa-solid fa-star"></i> 9.6</h4>
+            </div>
+          </a> -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Linking the JavaScript File -->
+    <script type="text/javascript" src="IMDBClone.js"></script>
+    <script type="text/javascript" src="MoviePage.js"></script>
+    <script type="text/javascript" src="FavroitePage.js"></script>
+  </body>
+</html>
