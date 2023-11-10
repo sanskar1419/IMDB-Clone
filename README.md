@@ -1,5 +1,7 @@
 # Movie Website
 
+### Deployed link : https://sanskar1419.github.io/IMDB-Clone/
+
 Using OMDB AND TMDB API
 
 ### General steps to follow when creating HomePage
